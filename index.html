@@ -5,38 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Picker</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
 </head>
 <body>
-
+    
     <div class="homepage">
-         <div class="heading">
+        <div class="heading">
             <h1>Hello Everyone</h1>
             <h2>Welcome to ColorPicker</h2>
-         </div> 
+        </div> 
+        
+        <div class="btn">
+            <button onclick="toggle()">Hex value</button>
+            <button onclick="toggle()">RGB Value</button>
+            <button onclick="toggle()">Gradient Color</button>
+        </div>
 
-         <div class="content">
-             <h2>Select Your Color</h2>
+         <div class="content" id="hexvalue">
+             <h2 id="color">Select Your Color</h2>
 
             <div class="title">
-                <div class="color-picker">
-                    <label for="colorPicker">
+                <div class="color-picker-section">
+                    <!-- <label for="colorPicker">
                         <input type="color" name="color" id="colorPicker" value="#1dbbce">
-                    </label>
+                    </label> -->
+                    <div id="color-picker"></div>
+                    <div id="color-indicator" class="color-indicator"></div>
                 </div>
                 
-                <p id="ColorCode">ColorCode</p>
+                <!-- <p id="value">value</p> -->
+                <p contenteditable="true" onclick="myFunction()" id="ColorCode">ColorCode</p>
                 
             </div>
-
          </div>
-        
-        <!-- <p id="ColorCode">ColorCode</p>
-    
-        <div class="color-picker">
-            <label for="colorPicker">
-                <input type="color" name="color" id="colorPicker" value="#1dbbce">
-            </label>
-        </div> -->
         
     </div>
     
