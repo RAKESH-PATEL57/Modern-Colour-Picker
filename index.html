@@ -16,13 +16,13 @@
         </div> 
         
         <div class="btn">
-            <button onclick="toggle()">Hex value</button>
-            <button onclick="toggle()">RGB Value</button>
-            <button onclick="toggle()">Gradient Color</button>
+            <button onclick="hexvalue()">Hex value</button>
+            <button onclick="rgb()">RGB Value</button>
+            <button onclick="gradient()">Gradient Color</button>
         </div>
-
+           
          <div class="content" id="hexvalue">
-             <h2 id="color">Select Your Color</h2>
+             <h2 id="choose">Select Your Color</h2>
 
             <div class="title">
                 <div class="color-picker-section">
@@ -34,13 +34,48 @@
                 </div>
                 
                 <!-- <p id="value">value</p> -->
-                <p contenteditable="true" onclick="myFunction()" id="ColorCode">ColorCode</p>
+                <p id="ColorCode">ColorCode</p>
                 
             </div>
          </div>
+
+         <div class="content" id="hexvalue2">
+            <h2 id="color">2</h2>
+
+           <div class="title">
+               <div class="color-picker-section">
+                   <div id="color-picker"></div>
+                   <div id="color-indicator" class="color-indicator"></div>
+               </div>
+               
+               <!-- <p id="value">value</p> -->
+               <p contenteditable="true" id="ColorCode">ColorCode</p>
+               
+           </div>
+        </div>
+
+        <div class="content" id="hexvalue3">
+            <h2 id="color">3</h2>
+
+           <div class="title">
+               <div class="color-picker-section">
+                   <!-- <label for="colorPicker">
+                       <input type="color" name="color" id="colorPicker" value="#1dbbce">
+                   </label> -->
+                   <div id="color-picker"></div>
+                   <div id="color-indicator" class="color-indicator"></div>
+               </div>
+               
+               <!-- <p id="value">value</p> -->
+               <p contenteditable="true" id="ColorCode">ColorCode</p>
+               
+           </div>
+        </div>
         
     </div>
     
+
+    <!--*************   To do - "select your color put in outside off all div "    ************-->
     
 
 
