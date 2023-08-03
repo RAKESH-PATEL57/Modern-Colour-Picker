@@ -15,20 +15,29 @@
 .homepage
 {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     width: 100%; 
     background: var(--background-color);
     color: var(--font-color);
-    display: flex;
     min-height: 100vh;
-    justify-content: space-between;
-    align-items: center;
+    overflow: hidden;
+}
+
+img
+{
+    z-index: 1;
+    position: absolute;
+    filter: blur(10px);
+    opacity: .8;
+    z-index: 1;
 }
 
 .homepage .heading
 {
-    margin-left: 5rem; 
+    margin-top: 2rem;
+    z-index: 2;
 }
 
 .heading h1
@@ -36,44 +45,46 @@
     font-size:3rem;
 }
 
-h2
-{
-    font-size: 1.5rem; 
-}
 
 /* ************ btn section ********************/
+
 .btn
 {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: left;
     gap: 1rem;
     height: 3rem;
-    width: 6rem;
-    position: fixed;
-    margin-left: 25rem;
+    width: 100%;
+    border:  2px solid red;
+    align-items: center;
+    margin-top: 5rem;  
 }
 
 
 .btn button
 {
     border: 1px solid aqua;
+    box-shadow: 2px 2px 20px aqua;
     border-radius:8px;
     cursor:pointer;
+    z-index: 3;
+    padding: 1rem;
+    font-size: 1rem;
 }
  
 
 .content
 {
-    border: 2px solid aqua;
-    height: 60vh;
+    /* height: 60vh; */
     width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 7rem; 
-    padding-top: 2rem;
-    /* display: none; */
+    padding: 2rem;
+    margin-top: 1rem;
+    border: 2px solid aqua;
+    box-shadow: 0px 0px 20px aqua;
+    z-index: 2;
 }
 
 .content .title
@@ -83,7 +94,8 @@ h2
     justify-content: center;
     align-items: center;
     gap: 10rem;   
-    margin-top: 5rem;
+    margin-top: 5rem;   
+    z-index: 3; 
 }
 
 .color-picker-section
@@ -91,6 +103,7 @@ h2
     display: flex;
     justify-content: space-between;
     gap: 4rem;
+    z-index: 3;
 }
 
 .color-indicator
@@ -98,6 +111,7 @@ h2
     background: #ffffff;
     height: 200px;
     width: 200px;
+    z-index: 3;
 }
 
 p
@@ -109,6 +123,7 @@ p
     height: 3rem;
     width: 10rem;
     font-size:1.5rem;
+    z-index: 3;
 }
 
 /******* Rgb section  *********************/
@@ -123,6 +138,23 @@ p
 #hexvalue3
 {
     display: none;
+}
+
+@media(max-width:1290px)
+{
+    .title
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .color-picker-section
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 

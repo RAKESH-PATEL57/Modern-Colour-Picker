@@ -10,40 +10,60 @@
 <body>
     
     <div class="homepage">
+        <img src="./image/bg.jpg">
         <div class="heading">
             <h1>Hello Everyone</h1>
             <h2>Welcome to ColorPicker</h2>
         </div> 
-        
-        <div class="btn">
-            <button onclick="hexvalue()">Hex value</button>
-            <button onclick="rgb()">RGB Value</button>
-            <button onclick="gradient()">Gradient Color</button>
-        </div>
-           
-         <div class="content" id="hexvalue">
-             <h2 id="choose">Select Your Color</h2>
 
-            <div class="title">
-                <div class="color-picker-section">
-                    <!-- <label for="colorPicker">
-                        <input type="color" name="color" id="colorPicker" value="#1dbbce">
-                    </label> -->
-                    <div id="color-picker"></div>
-                    <div id="color-indicator" class="color-indicator"></div>
-                </div>
-                
-                <!-- <p id="value">value</p> -->
-                <p id="ColorCode">ColorCode</p>
-                
+        <div class="colorSection">
+
+            <div class="btn">
+                <button onclick="hexvalue()">Hex value</button>
+                <button onclick="rgb()">RGB Value</button>
+                <button onclick="gradient()">Gradient Color</button>
             </div>
-         </div>
-
+            
+            <div class="content" id="hexvalue">
+                <h2 id="choose">Select Your Color</h2>
+                
+                <div class="title">
+                    <div class="color-picker-section">
+                        <!-- <label for="colorPicker">
+                            <input type="color" name="color" id="colorPicker" value="#1dbbce">
+                        </label> -->
+                        <div id="color-picker"></div>
+                        <div id="color-indicator" class="color-indicator"></div>
+                    </div>
+                    
+                    <!-- <p id="value">value</p> -->
+                    <p id="ColorCode">ColorCode</p>
+                    
+                </div>
+            </div>
+            
          <div class="content" id="hexvalue2">
-            <h2 id="color">2</h2>
-
-           <div class="title">
-               <div class="color-picker-section">
+             
+             <div class="title">
+                 <div class="color-picker-section">
+                     <div id="color-picker"></div>
+                     <div id="color-indicator" class="color-indicator"></div>
+                    </div>
+                    
+                    <!-- <p id="value">value</p> -->
+                    <p contenteditable="true" id="ColorCode">ColorCode</p>
+                    
+                </div>
+            </div>
+            
+            <div class="content" id="hexvalue3">
+                <h2 id="color">3</h2>
+                
+                <div class="title">
+                    <div class="color-picker-section">
+                        <!-- <label for="colorPicker">
+                            <input type="color" name="color" id="colorPicker" value="#1dbbce">
+                        </label> -->
                    <div id="color-picker"></div>
                    <div id="color-indicator" class="color-indicator"></div>
                </div>
@@ -51,26 +71,9 @@
                <!-- <p id="value">value</p> -->
                <p contenteditable="true" id="ColorCode">ColorCode</p>
                
-           </div>
+            </div>
         </div>
-
-        <div class="content" id="hexvalue3">
-            <h2 id="color">3</h2>
-
-           <div class="title">
-               <div class="color-picker-section">
-                   <!-- <label for="colorPicker">
-                       <input type="color" name="color" id="colorPicker" value="#1dbbce">
-                   </label> -->
-                   <div id="color-picker"></div>
-                   <div id="color-indicator" class="color-indicator"></div>
-               </div>
-               
-               <!-- <p id="value">value</p> -->
-               <p contenteditable="true" id="ColorCode">ColorCode</p>
-               
-           </div>
-        </div>
+    </div>
         
     </div>
     
