@@ -24,37 +24,40 @@
                 <button onclick="gradient()">Gradient Color</button>
             </div>
             
-            <div class="content" id="hexvalue">
-                <h2 id="choose">Select Your Color</h2>
+             <div class="content" id="hexvalue"> 
+                <!-- <h2 id="choose">Select Your Color</h2> -->
                 
                 <div class="title">
                     <div class="color-picker-section">
-                        <!-- <label for="colorPicker">
-                            <input type="color" name="color" id="colorPicker" value="#1dbbce">
-                        </label> -->
+                     
                         <div id="color-picker"></div>
                         <div id="color-indicator" class="color-indicator"></div>
                     </div>
                     
-                    <!-- <p id="value">value</p> -->
-                    <p id="ColorCode">ColorCode</p>
+    
+                    <p id="ColorCode" class="ColorCode" >ColorCode</p>
                     
                 </div>
             </div>
             
          <div class="content" id="hexvalue2">
              
-             <div class="title">
-                 <div class="color-picker-section">
-                     <div id="color-picker"></div>
-                     <div id="color-indicator" class="color-indicator"></div>
-                    </div>
-                    
-                    <!-- <p id="value">value</p> -->
-                    <p contenteditable="true" id="ColorCode">ColorCode</p>
-                    
+             <div class="rgb">
+
+                <div class="rgbcolorsection">
+                    Result:<input type="text" id="box" value="rgb(255,255,255)">
+                    Red: <input type="range" id="red" value="255" min="0" max="255">
+                    Green: <input type="range" id="green" value="255" min="0" max="255">
+                    Blue: <input type="range" id="blue" value="255" min="0" max="255">
                 </div>
+
+                <div class="rgbcolor-indicator" id="rgbcolor-indicator"></div>
+                 
+                <p id="rgbColorCode">ColorCode</p>
+
             </div>
+
+
             
             <div class="content" id="hexvalue3">
                 <h2 id="color">3</h2>

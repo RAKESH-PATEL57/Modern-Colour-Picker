@@ -132,6 +132,36 @@ p
     display: none;
 }
 
+.rgb
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 8;
+}
+
+.rgbcolorsection
+{
+    display: flex;
+    flex-direction: column;
+    z-index: 8;
+}
+
+#box
+{
+    color: #fff;
+    background: red;
+    box-shadow: 0px 0px 20px aqua;
+    border: none;
+}
+
+.rgbcolor-indicator
+{
+    background: #ffffff;
+    height: 200px;
+    width: 200px;
+    z-index: 3;
+}
 
 /******* Gradient Section   *************************/
 
@@ -139,6 +169,19 @@ p
 {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************  respossive section  ***************/
 
 @media(max-width:1290px)
 {
