@@ -83,9 +83,7 @@ function gradient()
     while(t.style.display === "none")
     {
         t.style.display = "block";
-        // c.style.display = "flex";
-        // c.style.justifyContent = "center";
-        // c.style.alignItems = "center";
+
         p.style.display = "none";
         s.style.display = "none";
     };

@@ -24,9 +24,7 @@
                 <button onclick="gradient()">Gradient Color</button>
             </div>
             
-             <div class="content" id="hexvalue"> 
-                <!-- <h2 id="choose">Select Your Color</h2> -->
-                
+             <div class="content" id="hexvalue">                
                 <div class="title">
                     <div class="color-picker-section">
                      
@@ -43,17 +41,20 @@
          <div class="content" id="hexvalue2">
              
              <div class="rgb">
-
                 <div class="rgbcolorsection">
-                    Result:<input type="text" id="box" value="rgb(255,255,255)">
-                    Red: <input type="range" id="red" value="255" min="0" max="255">
-                    Green: <input type="range" id="green" value="255" min="0" max="255">
-                    Blue: <input type="range" id="blue" value="255" min="0" max="255">
+                    <div class="colorchoosing">
+                        <h2>Choose your Color</h2>
+                        Red: <input type="range" id="red" value="255" min="0" max="255">
+                        Green: <input type="range" id="green" value="255" min="0" max="255">
+                        Blue: <input type="range" id="blue" value="255" min="0" max="255">
+                    </div>
+                    
+                    <div class="rgbcolor-indicator" id="rgbcolor-indicator"></div>
+                    
+                    <div class="colorValue">  
+                        <p id="rgbColorCode">ColorCode</p>
+                    </div>
                 </div>
-
-                <div class="rgbcolor-indicator" id="rgbcolor-indicator"></div>
-                 
-                <p id="rgbColorCode">ColorCode</p>
 
             </div>
 
