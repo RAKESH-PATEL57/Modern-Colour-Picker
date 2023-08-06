@@ -20,7 +20,6 @@ colorPicker.on(['color:init', 'color:change'], function(color)
 
 
   let p = document.getElementById("hexvalue");
-//   let c = document.getElementById("choose");
   let s = document.getElementById("hexvalue2");
   let t = document.getElementById("hexvalue3");
 
@@ -29,18 +28,12 @@ function hexvalue()
     do
     {
         p.style.display = "block";
-        // c.style.display = "flex";
-        // c.style.justifyContent = "center";
-        // c.style.alignItems = "center";
         s.style.display = "none";
         t.style.display = "none";
     }
     while(p.style.display === "none")
     {
         p.style.display = "block";
-        // c.style.display = "flex";
-        // c.style.justifyContent = "center";
-        // c.style.alignItems = "center";
         s.style.display = "none";
         t.style.display = "none";
     };
@@ -51,18 +44,12 @@ function rgb()
 {
     do{
         s.style.display = "block";
-        // c.style.display = "flex";
-        // c.style.justifyContent = "center";
-        // c.style.alignItems = "center";
         p.style.display = "none";
         t.style.display = "none";
     }
     while(s.style.display === "none")
     {
         s.style.display = "block";
-        // c.style.display = "flex";
-        // c.style.justifyContent = "center";
-        // c.style.alignItems = "center";
         p.style.display = "none";
         t.style.display = "none";
     };
@@ -74,9 +61,6 @@ function gradient()
     {
         
         t.style.display = "block";
-        // c.style.display = "flex";
-        // c.style.justifyContent = "center";
-        // c.style.alignItems = "center";
         p.style.display = "none";
         s.style.display = "none";
     }
@@ -89,3 +73,23 @@ function gradient()
     };
 
 }
+
+//******** Rgb color section *****************************
+let rgbColorValue = document.getElementById("rgbColorCode");
+let rgbColorIndicator = document.getElementById("rgbcolor-indicator");
+
+function rgbColor(){
+    var red = document.getElementById('red').value;
+    var green = document.getElementById('green').value;
+    var blue = document.getElementById('blue').value;
+    var color = 'rgb('+ red +','+ green +','+ blue +')';
+    rgbColorValue.innerHTML = color;
+    rgbColorIndicator.style.backgroundColor = color;
+    rgbColorIndicator.style.boxShadow = `0px 0px 20px ${color}`;
+    // document.body.style.backgroundColor = color;
+    // document.getElementById('box').value = color;
+}
+
+document.getElementById('red').addEventListener('input',rgbColor);
+document.getElementById('green').addEventListener('input',rgbColor);
+document.getElementById('blue').addEventListener('input',rgbColor);

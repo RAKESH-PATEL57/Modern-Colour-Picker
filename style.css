@@ -95,7 +95,7 @@ img
     justify-content: center;
     align-items: center;
     gap: 10rem;   
-    margin-top: 5rem;   
+    margin-top: 3rem;   
     z-index: 3; 
 }
 
@@ -128,6 +128,7 @@ p
 }
 
 /******* Rgb section  *********************/
+
 #hexvalue2
 {
     display: none;
@@ -139,15 +140,17 @@ p
     z-index: 8;
     display: flex;
     justify-content: center;
+    margin-top: 3rem;
 }
 
 .rgbcolorsection
 {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     z-index: 8;
-    gap: 10vh;
+    width: 100vh;
 }
 
 .colorchoosing
@@ -163,6 +166,14 @@ p
     width: 200px;
     z-index: 3;
 }
+
+#rgbColorCode 
+{
+  width:12rem;
+  padding: 1rem;
+}
+
+
 
 /******* Gradient Section   *************************/
 
