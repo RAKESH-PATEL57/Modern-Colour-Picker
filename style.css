@@ -9,6 +9,9 @@
     --background-color:linear-gradient(36deg,rgb(94, 94, 94),rgb(0, 0, 0));
     --font-color:#fff;
     --border-color:aqua;
+    --red-background-color:red;
+    --green-background-color:green;
+    --blue-background-color:blue;
 }
 
 
@@ -157,6 +160,44 @@ p
 {
     display: flex;
     flex-direction: column;
+}
+
+input[type= "range"]
+{
+    -webkit-appearance: none;
+    height: 10px;
+    width: 80%;
+    border-radius: 50px;
+    outline: none;
+}
+
+input[type= "range"]::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    height: 1.2rem;
+    width: 1.2rem;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.colorchoosing #red
+{
+    background-color: var(--red-background-color);
+    box-shadow: 0rem 0rem 1rem var(--red-background-color);
+}
+
+.colorchoosing #green
+{
+    background-color: var(--green-background-color);
+    box-shadow: 0rem 0rem 1rem var(--green-background-color);
+}
+
+.colorchoosing #blue
+{
+    background-color: var(--blue-background-color);
+    box-shadow: 0rem 0rem 1rem var(--blue-background-color);
 }
 
 .rgbcolor-indicator
