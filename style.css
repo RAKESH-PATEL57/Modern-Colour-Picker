@@ -158,15 +158,24 @@ p
 
 .colorchoosing
 {
+
+    /* border: 2px solid red; */
+    height: 10rem;
     display: flex;
     flex-direction: column;
+    gap: .9rem;
+    margin-top:-9rem;
+    margin-left: -3rem;
+    word-spacing: 80%;
+    width: 35%;
+    font-size: 1.2rem;
 }
 
 input[type= "range"]
 {
     -webkit-appearance: none;
     height: 10px;
-    width: 80%;
+    width: 100%;
     border-radius: 50px;
     outline: none;
 }
@@ -253,6 +262,11 @@ input[type= "range"]::-webkit-slider-thumb
     }
 }
 
+
+
+
+/* to do 
+rgb choose toolbar maintain */
 
 
 
