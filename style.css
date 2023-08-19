@@ -8,7 +8,7 @@
 {
     --background-color:linear-gradient(36deg,rgb(94, 94, 94),rgb(0, 0, 0));
     --font-color:#fff;
-    --border-color:aqua;
+    --main-color:aqua;
     --red-background-color:red;
     --green-background-color:green;
     --blue-background-color:blue;
@@ -67,7 +67,7 @@ img
 .btn button
 {
     border: 1px solid aqua;
-    box-shadow: 2px 2px 20px aqua;
+    box-shadow: 2px 2px 20px var(--main-color);
     border-radius:8px;
     cursor:pointer;
     z-index: 3;
@@ -86,8 +86,8 @@ img
     align-items: center;
     padding: 2rem;
     margin-top: 1rem;
-    border: 2px solid aqua;
-    box-shadow: 0px 0px 20px aqua;
+    border: 2px solid var(--main-color);
+    box-shadow: 0px 0px 20px var(--main-color);
     z-index: 2;
 }
 
@@ -123,7 +123,7 @@ p
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid aqua;
+    border: 2px solid var(--main-color);
     height: 3rem;
     width: 10rem;
     font-size:1.5rem;
@@ -221,6 +221,7 @@ input[type= "range"]::-webkit-slider-thumb
 {
   width:12rem;
   padding: 1rem;
+  box-shadow: 0rem 0rem 1rem var(--main-color);
 }
 
 
@@ -231,16 +232,6 @@ input[type= "range"]::-webkit-slider-thumb
 {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /***********************  respossive section  ***************/
