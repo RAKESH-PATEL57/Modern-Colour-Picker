@@ -6,13 +6,15 @@
 
 :root
 {
-    --background-color:linear-gradient(36deg,rgb(94, 94, 94),rgb(0, 0, 0));
+    /* --background-color:linear-gradient(36deg,rgb(94, 94, 94),rgb(0, 0, 0)); */
+    --background-color:black;
     --font-color:#fff;
     --main-color:aqua;
     --red-background-color:red;
     --green-background-color:green;
     --blue-background-color:blue;
 }
+
 
 
 .homepage
@@ -58,7 +60,7 @@ img
     gap: 1rem;
     height: 3rem;
     width: 100%;
-    border:  2px solid red;
+    /* border:  2px solid red; */
     align-items: center;
     margin-top: 5rem;  
 }
@@ -66,13 +68,20 @@ img
 
 .btn button
 {
-    border: 1px solid aqua;
-    box-shadow: 2px 2px 20px var(--main-color);
     border-radius:8px;
     cursor:pointer;
     z-index: 3;
     padding: 1rem;
     font-size: 1rem;
+}
+
+button:hover
+{ 
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    box-shadow: 2px 2px 20px var(--main-color),
+                2px 2px 20px var(--main-color),
+                2px 2px 40px var(--green-background-color);
 }
  
 
@@ -89,6 +98,7 @@ img
     border: 2px solid var(--main-color);
     box-shadow: 0px 0px 20px var(--main-color);
     z-index: 2;
+    margin-top: 2rem;
 }
 
 .content .title

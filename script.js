@@ -1,6 +1,7 @@
 
 let colorIndicator = document.getElementById("color-indicator");
 let colorValue = document.getElementById("ColorCode");
+let contentColor = document.getElementById("hexvalue");
 const colorPicker = new iro.ColorPicker("#color-picker", {
     width:190, 
     color: "#ffffff"
@@ -13,6 +14,7 @@ colorPicker.on(['color:init', 'color:change'], function(color)
     colorValue.innerHTML = color.hexString;
     colorIndicator.style.backgroundColor = color.hexString;
     colorIndicator.style.boxShadow = `0px 0px 20px ${color.hexString}`;
+    contentColor.style.boxShadow = `0px 0px 20px ${color.hexString}`;
     // console.log(color.hexString);                 // you can get hex value from here
 });
 
