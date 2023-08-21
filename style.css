@@ -43,11 +43,19 @@ img
 {
     margin-top: 2rem;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .heading h1
 {
     font-size:3rem;
+}
+.heading h2
+{
+    display: flex;
+    justify-content: center;
 }
 
 
