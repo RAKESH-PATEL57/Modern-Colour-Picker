@@ -12,6 +12,7 @@ const colorPicker = new iro.ColorPicker("#color-picker", {
 colorPicker.on(['color:init', 'color:change'], function(color) 
 {
     colorValue.innerHTML = color.hexString;
+    colorValue.style.boxShadow = `0px 0px 20px ${color.hexString}`;
     colorIndicator.style.backgroundColor = color.hexString;
     colorIndicator.style.boxShadow = `0px 0px 20px ${color.hexString}`;
     contentColor.style.boxShadow = `0px 0px 20px ${color.hexString}`;
