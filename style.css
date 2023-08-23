@@ -59,7 +59,7 @@ img
 }
 
 
-/* ************ btn section ********************/
+/* ************ btn section start ********************/
 
 .btn
 {
@@ -81,6 +81,7 @@ img
     z-index: 3;
     padding: 1rem;
     font-size: 1rem;
+    transition: .2s;
 }
 
 button:hover
@@ -90,7 +91,12 @@ button:hover
     box-shadow: 2px 2px 20px var(--main-color),
                 2px 2px 20px var(--main-color),
                 2px 2px 40px var(--green-background-color);
+    margin-bottom: 1rem;   
+    font-size: 1.3rem; 
+    transform:rotateZ(-35deg);        
 }
+
+/* ************ btn section end ********************/
  
 
 .content
@@ -149,11 +155,16 @@ button:hover
     box-shadow: 0rem 0rem 1rem var(--main-color);
 }
 
+#hexvalue
+{
+    display: none;
+}
+
 /******* Rgb section  *********************/
 
 #hexvalue2
 {
-    display: none;
+    /* display: none; */
     position: relative;
 }
 
