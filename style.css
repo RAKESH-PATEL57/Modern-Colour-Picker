@@ -92,8 +92,7 @@ button:hover
                 2px 2px 20px var(--main-color),
                 2px 2px 40px var(--green-background-color);
     margin-bottom: 1rem;   
-    font-size: 1.3rem; 
-    transform:rotateZ(-35deg);        
+    font-size: 1.3rem;     
 }
 
 /* ************ btn section end ********************/
@@ -164,7 +163,7 @@ button:hover
 
 #hexvalue2
 {
-    /* display: none; */
+    display: none;
     position: relative;
 }
 
@@ -174,6 +173,7 @@ button:hover
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+    font-size: 1rem;
 }
 
 .rgbcolorsection
