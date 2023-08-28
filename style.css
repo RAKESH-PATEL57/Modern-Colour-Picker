@@ -15,6 +15,11 @@
     --blue-background-color:blue;
 }
 
+body
+{
+    background: var(--background-color);
+}
+
 
 
 .homepage
@@ -23,11 +28,14 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: 100%; 
+    margin-left: 10rem;
+    margin-top: 2.5rem;
+    width: 80vw; 
     background: var(--background-color);
     color: var(--font-color);
-    min-height: 100vh;
+    min-height: 90vh;
     overflow: hidden;
+    box-shadow: inset 0px 0px 20px aqua;
 }
 
 img
@@ -46,6 +54,10 @@ img
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-shadow: 0px 0px 10px var(--main-color),
+                 0px 0px 20px var(--main-color), 
+                 0px 0px 40px var(--main-color), 
+                 0px 0px 60px var(--main-color);
 }
 
 .heading h1
@@ -268,8 +280,14 @@ input[type= "range"]::-webkit-slider-thumb
 
 /***********************  respossive section  ***************/
 
-@media(max-width:1290px)
+@media(max-width:1325px)
 {
+    .btn
+    {
+        display: flex;
+        justify-content: center;
+    }
+
     .title
     {
         display: flex;
@@ -283,22 +301,13 @@ input[type= "range"]::-webkit-slider-thumb
         justify-content: center;
         flex-direction: column;
     }
-}
-
-@media(max-width:1325px)
-{
-    .btn
-    {
-        display: flex;
-        justify-content: center;
-    }
 
     .rgb
     {
         z-index: 8;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        /* justify-content: center;
+        flex-direction: column; */
     }
     
     .colorchoosing
@@ -308,7 +317,7 @@ input[type= "range"]::-webkit-slider-thumb
 
     .rgbcolor-indicator
     {
-        margin-right: -20rem;
+        margin-right: -28rem;
         margin-top: -3rem;
     }
 
@@ -322,7 +331,7 @@ input[type= "range"]::-webkit-slider-thumb
     
 }
 
-@media(max-width:1325px)
+@media(max-width:1050px)
 {
     .hexvalue2
     {
@@ -338,21 +347,55 @@ input[type= "range"]::-webkit-slider-thumb
 
     .rgbcolor-indicator
     {
-        margin-right: -20rem;
+        margin-right: -28rem;
         margin-top: -3rem;
     }
 
     #rgbColorCode
     {
-        margin-top: 17rem;
-        margin-left: -7rem;
-        margin-right: 18.5rem;
+        margin-top: 18rem;
+        margin-left: 0rem;
+        margin-right: 11.5rem;
         display: flex;
     }
     
 }
 
 
+@media(max-width:940px)
+{
+    .rgbcolorsection
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .colorchoosing
+    {
+        margin-left: 0rem;
+    }
+    
+    .colorchoosing h2
+    {
+        visibility: hidden;
+    }
+
+    .rgbcolor-indicator
+    {
+        margin-right: 0rem;
+        margin-top: 5rem;
+    }
+
+    #rgbColorCode
+    {
+        margin-top: 0rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        display: flex;
+    }
+    
+}
 
 
 /* to do 
