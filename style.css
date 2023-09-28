@@ -18,6 +18,11 @@
 body
 {
     background: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
 }
 
 
@@ -26,9 +31,9 @@ body
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
-    margin-left: 10rem;
     margin-top: 2.5rem;
     width: 80vw; 
     background: var(--background-color);
@@ -37,6 +42,12 @@ body
     overflow: hidden;
     box-shadow: inset 0px 0px 20px aqua;
 }
+.colorSection
+{
+    margin-top: -5rem;
+    position: relative;
+}
+
 
 img
 {
@@ -78,8 +89,6 @@ img
     display: flex;
     justify-content: left;
     gap: 1rem;
-    height: 3rem;
-    width: 100%;
     /* border:  2px solid red; */
     align-items: center;
     margin-top: 5rem;  
@@ -94,6 +103,8 @@ img
     padding: 1rem;
     font-size: 1rem;
     transition: .2s;
+    height: auto;
+    width: auto;
 }
 
 button:hover
@@ -113,7 +124,7 @@ button:hover
 .content
 {
     /* height: 60vh; */
-    position: relative;
+    position: absolute;
     width: 60vw;
     display: flex;
     flex-direction: column;
@@ -395,7 +406,7 @@ input[type= "range"]::-webkit-slider-thumb
         display: flex;
     }
     
-}
+} 
 
 
 /* to do 
