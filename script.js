@@ -22,23 +22,23 @@ colorPicker.on(['color:init', 'color:change'], function(color)
 
 
 
-let p = document.getElementById("hexvalue");
-let s = document.getElementById("rgb-value");
-  let t = document.getElementById("gradient-value");
+let h = document.getElementById("hexvalue");
+let r = document.getElementById("rgb-value");
+  let grd = document.getElementById("gradient-value");
 
 function hexvalue()
 {
     do
     {
-        p.style.display = "block";
-        s.style.display = "none";
-        t.style.display = "none";
+        h.style.display = "block";
+        r.style.display = "none";
+        grd.style.display = "none";
     }
     while(p.style.display === "none")
     {
-        p.style.display = "block";
-        s.style.display = "none";
-        t.style.display = "none";
+        h.style.display = "block";
+        r.style.display = "none";
+        grd.style.display = "none";
     };
 
 }  
@@ -46,15 +46,15 @@ function hexvalue()
 function rgb()
 {
     do{
-        s.style.display = "block";
-        p.style.display = "none";
-        t.style.display = "none";
+        r.style.display = "block";
+        h.style.display = "none";
+        grd.style.display = "none";
     }
     while(s.style.display === "none")
     {
-        s.style.display = "block";
-        p.style.display = "none";
-        t.style.display = "none";
+        r.style.display = "block";
+        h.style.display = "none";
+        grd.style.display = "none";
     };
 }
 
@@ -63,16 +63,15 @@ function gradient()
     do
     {
         
-        t.style.display = "block";
-        p.style.display = "none";
-        s.style.display = "none";
+        grd.style.display = "block";
+        h.style.display = "none";
+        r.style.display = "none";
     }
     while(t.style.display === "none")
     {
-        t.style.display = "block";
-
-        p.style.display = "none";
-        s.style.display = "none";
+        grd.style.display = "block";
+        h.style.display = "none";
+        e.style.display = "none";
     };
 
 }
