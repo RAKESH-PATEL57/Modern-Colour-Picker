@@ -184,7 +184,7 @@ button:hover
 
 /******* Rgb section  *********************/
 
-#hexvalue2
+#rgb-value
 {
     /* display: none; */
     position: relative;
@@ -283,7 +283,7 @@ input[type= "range"]::-webkit-slider-thumb
 
 /******* Gradient Section   *************************/
 
-#hexvalue3
+#gradient-value
 {
     display: none;
 }
@@ -317,8 +317,6 @@ input[type= "range"]::-webkit-slider-thumb
     {
         z-index: 8;
         display: flex;
-        /* justify-content: center;
-        flex-direction: column; */
     }
     
     .colorchoosing
@@ -408,9 +406,6 @@ input[type= "range"]::-webkit-slider-thumb
     
 } 
 
-
-/* to do 
-rgb choose toolbar maintain */
 
 
 

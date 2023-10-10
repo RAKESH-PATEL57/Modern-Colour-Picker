@@ -22,9 +22,9 @@ colorPicker.on(['color:init', 'color:change'], function(color)
 
 
 
-let s = document.getElementById("hexvalue2");
-  let p = document.getElementById("hexvalue");
-  let t = document.getElementById("hexvalue3");
+let p = document.getElementById("hexvalue");
+let s = document.getElementById("rgb-value");
+  let t = document.getElementById("gradient-value");
 
 function hexvalue()
 {
