@@ -101,22 +101,20 @@ img
     cursor:pointer;
     z-index: 3;
     padding: 1rem;
-    font-size: 1rem;
     transition: .2s;
     height: auto;
     width: auto;
-}
-
-button:hover
-{ 
     border: 1px solid var(--main-color);
     background: var(--main-color);
     box-shadow: 2px 2px 20px var(--main-color),
-                2px 2px 20px var(--main-color),
-                2px 2px 40px var(--green-background-color);
-    margin-bottom: 1rem;   
-    font-size: 1.3rem;     
+                2px 2px 20px var(--main-color);
+                font-size: 1.3rem;     
 }
+
+/* button:hover
+{ 
+    margin-bottom: 1rem;   
+} */
 
 /* ************ btn section end ********************/
  
