@@ -23,21 +23,21 @@ colorPicker.on(['color:init', 'color:change'], function(color)
 
 
 let h = document.getElementById("hexvalue");
-let r = document.getElementById("rgb-value");
-  let grd = document.getElementById("gradient-value");
+let RGB = document.getElementById("rgb-value");
+let grd = document.getElementById("gradient-value");
 
 function hexvalue()
 {
     do
     {
         h.style.display = "block";
-        r.style.display = "none";
+        RGB.style.display = "none";
         grd.style.display = "none";
     }
     while(p.style.display === "none")
     {
         h.style.display = "block";
-        r.style.display = "none";
+        RGB.style.display = "none";
         grd.style.display = "none";
     };
 
@@ -46,13 +46,13 @@ function hexvalue()
 function rgb()
 {
     do{
-        r.style.display = "block";
+        RGB.style.display = "block";
         h.style.display = "none";
         grd.style.display = "none";
     }
     while(s.style.display === "none")
     {
-        r.style.display = "block";
+        RGB.style.display = "block";
         h.style.display = "none";
         grd.style.display = "none";
     };
@@ -65,7 +65,7 @@ function gradient()
         
         grd.style.display = "block";
         h.style.display = "none";
-        r.style.display = "none";
+        RGB.style.display = "none";
     }
     while(t.style.display === "none")
     {
