@@ -22,23 +22,23 @@ colorPicker.on(['color:init', 'color:change'], function(color)
 
 
 
-let h = document.getElementById("hexvalue");
-let RGB = document.getElementById("rgb-value");
-let grd = document.getElementById("gradient-value");
+let hexValue = document.getElementById("hexvalue");
+let rgbValue = document.getElementById("rgb-value");
+let grdValue = document.getElementById("gradient-value");
 
 function hexvalue()
 {
     do
     {
-        h.style.display = "block";
-        RGB.style.display = "none";
-        grd.style.display = "none";
+        hexValue.style.display = "block";
+        rgbValue.style.display = "none";
+        grdValue.style.display = "none";
     }
-    while(p.style.display === "none")
+    while(hexValue.style.display === "none")
     {
-        h.style.display = "block";
-        RGB.style.display = "none";
-        grd.style.display = "none";
+        hexValue.style.display = "block";
+        rgbValue.style.display = "none";
+        grdValue.style.display = "none";
     };
 
 }  
@@ -46,15 +46,15 @@ function hexvalue()
 function rgb()
 {
     do{
-        RGB.style.display = "block";
-        h.style.display = "none";
-        grd.style.display = "none";
+        rgbValue.style.display = "block";
+        hexValue.style.display = "none";
+        grdValue.style.display = "none";
     }
-    while(s.style.display === "none")
+    while(rgbValue.style.display === "none")
     {
-        RGB.style.display = "block";
-        h.style.display = "none";
-        grd.style.display = "none";
+        rgbValue.style.display = "block";
+        hexValue.style.display = "none";
+        grdValue.style.display = "none";
     };
 }
 
@@ -63,15 +63,15 @@ function gradient()
     do
     {
         
-        grd.style.display = "block";
-        h.style.display = "none";
-        RGB.style.display = "none";
+        grdValue.style.display = "block";
+        hexValue.style.display = "none";
+        rgbValue.style.display = "none";
     }
-    while(t.style.display === "none")
+    while(grdValue.style.display === "none")
     {
-        grd.style.display = "block";
-        h.style.display = "none";
-        e.style.display = "none";
+        grdValue.style.display = "block";
+        hexValue.style.display = "none";
+        rgbValue.style.display = "none";
     };
 
 }

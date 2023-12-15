@@ -129,7 +129,7 @@ button:hover
 .content
 {
     /* height: 60vh; */
-    position: absolute;
+    /* position: absolute; */
     width: 60vw;
     display: flex;
     flex-direction: column;
@@ -182,14 +182,16 @@ button:hover
     box-shadow: 0rem 0rem 1rem var(--main-color);
 }
 
-#hexvalue
+.hexValue
 {
-    display: none;
+    display: block;
+    border: 50px solid red;
+    z-index: 100;
 }
 
 /******* Rgb section  *********************/
 
-#rgb-value
+.rgbValue
 {
     /* display: none; */
     position: relative;
@@ -287,8 +289,7 @@ input[type= "range"]::-webkit-slider-thumb
 
 
 /******* Gradient Section   *************************/
-
-#gradient-value
+.grdvalue
 {
     display: none;
 }
@@ -347,7 +348,7 @@ input[type= "range"]::-webkit-slider-thumb
 
 @media(max-width:1050px)
 {
-    .hexvalue2
+    .hexvalue
     {
         display: flex;
         justify-content: center;
