@@ -24,7 +24,7 @@ colorPicker.on(['color:init', 'color:change'], function(color)
 
 let hexValue = document.getElementById("hexvalue");
 let rgbValue = document.getElementById("rgb-value");
-let grdValue = document.getElementById("gradient-value");
+// let grdValue = document.getElementById("gradient-value");
 
 function hexvalue()
 {
@@ -32,13 +32,13 @@ function hexvalue()
     {
         hexValue.style.display = "block";
         rgbValue.style.display = "none";
-        grdValue.style.display = "none";
+        // grdValue.style.display = "none";
     }
     while(hexValue.style.display === "none")
     {
         hexValue.style.display = "block";
         rgbValue.style.display = "none";
-        grdValue.style.display = "none";
+        // grdValue.style.display = "none";
     };
 
 }  
@@ -48,33 +48,33 @@ function rgb()
     do{
         rgbValue.style.display = "block";
         hexValue.style.display = "none";
-        grdValue.style.display = "none";
+        // grdValue.style.display = "none";
     }
     while(rgbValue.style.display === "none")
     {
         rgbValue.style.display = "block";
         hexValue.style.display = "none";
-        grdValue.style.display = "none";
+        // grdValue.style.display = "none";
     };
 }
 
-function gradient()
-{
-    do
-    {
+// function gradient()
+// {
+//     do
+//     {
         
-        grdValue.style.display = "block";
-        hexValue.style.display = "none";
-        rgbValue.style.display = "none";
-    }
-    while(grdValue.style.display === "none")
-    {
-        grdValue.style.display = "block";
-        hexValue.style.display = "none";
-        rgbValue.style.display = "none";
-    };
+//         grdValue.style.display = "block";
+//         hexValue.style.display = "none";
+//         rgbValue.style.display = "none";
+//     }
+//     while(grdValue.style.display === "none")
+//     {
+//         grdValue.style.display = "block";
+//         hexValue.style.display = "none";
+//         rgbValue.style.display = "none";
+//     };
 
-}
+// }
 
 //******** Rgb color section *****************************
 let rgbColorValue = document.getElementById("rgbColorCode");

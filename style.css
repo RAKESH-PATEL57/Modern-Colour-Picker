@@ -289,10 +289,10 @@ input[type= "range"]::-webkit-slider-thumb
 
 
 /******* Gradient Section   *************************/
-.grdvalue
+/* .grdvalue
 {
     display: none;
-}
+} */
 
 
 /***********************  respossive section  ***************/
