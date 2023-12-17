@@ -26,23 +26,6 @@ let hexValue = document.getElementById("hexvalue");
 let rgbValue = document.getElementById("rgb-value");
 // let grdValue = document.getElementById("gradient-value");
 
-function hexvalue()
-{
-    do
-    {
-        hexValue.style.display = "block";
-        rgbValue.style.display = "none";
-        // grdValue.style.display = "none";
-    }
-    while(hexValue.style.display === "none")
-    {
-        hexValue.style.display = "block";
-        rgbValue.style.display = "none";
-        // grdValue.style.display = "none";
-    };
-
-}  
-
 function rgb()
 {
     do{
@@ -57,6 +40,13 @@ function rgb()
         // grdValue.style.display = "none";
     };
 }
+
+function hexvalue()
+{
+ 
+        hexValue.style.display = "block";
+        rgbValue.style.display = "none";
+}  
 
 // function gradient()
 // {
