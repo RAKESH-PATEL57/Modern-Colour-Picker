@@ -39,7 +39,7 @@ body
     background: var(--background-color);
     color: var(--font-color);
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: inset 0px 0px 20px aqua;
 }
 
@@ -92,7 +92,9 @@ img
     gap: 1rem;
     /* border:  2px solid red; */
     align-items: center;
-    margin-top: 5rem;  
+    margin-top: 5rem;
+    position: fixed;  
+    top: 10%;
 }
 
 
@@ -107,7 +109,7 @@ img
     height: auto;
     width: auto;
     border: 1px solid var(--main-color);
-    transition: .5s;
+    transition: .3s;
 }
 
 button:hover
@@ -124,7 +126,7 @@ button:hover
 } */
 
 /* ************ btn section end ********************/
- 
+
 
 .content
 {
@@ -136,13 +138,11 @@ button:hover
     align-items: center;
     padding: 2rem;
     margin-top: 1rem;
-    border: 1px solid var(--font-color);
-    box-shadow: 0px 0px 20px var(--main-color);
     z-index: 2;
-    margin-top: 2rem;
+    margin-top: 13rem;
 }
 
-.content .title
+.content .hex-content
 {
     /* padding-top: 3rem; */
     display: flex;
@@ -182,23 +182,11 @@ button:hover
     box-shadow: 0rem 0rem 1rem var(--main-color);
 }
 
-.hexValue
-{
-    display: block;
-    border: 50px solid red;
-    z-index: 100;
-}
-
 /******* Rgb section  *********************/
-
-.rgbValue
-{
-    /* display: none; */
-    position: relative;
-}
 
 .rgb
 {
+    position: relative;
     z-index: 8;
     display: flex;
     justify-content: center;
@@ -286,6 +274,25 @@ input[type= "range"]::-webkit-slider-thumb
   font-size: 1.4rem;
 }
 
+/* hex value section    */
+.hexValue
+{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 1rem;
+    border: 1px solid var(--font-color);
+    box-shadow: 0px 0px 20px var(--main-color);
+    z-index: 300;
+    margin-top: 2rem;
+} 
+
+#hexvalue
+{
+    display: none;
+}
 
 
 /******* Gradient Section   *************************/
